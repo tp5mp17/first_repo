@@ -1,10 +1,10 @@
-const temperate = 90
+const temperature = 90
 
 let timeofday = "morning"
 
 let soilMoisture = 30
 
-if (temperate >= 80) {
+if (temperature >= 80) {
     console.log("watering on")
 } else {
     console.log("watering off")
