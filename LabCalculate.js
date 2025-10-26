@@ -22,7 +22,7 @@ function subtract(a, b) {
 
 function multiply(a, b) {
     const result = a * b;
-    recordCalculation(a, b, 10);
+    recordCalculation(a + b * result);
     return result;
 }
 console.log(result)
@@ -30,8 +30,9 @@ console.log(result)
 function divide(a, b) {
     if (b === 0) {
         const errorMag = "error: cannot divide by zero";
-        recordCalculation(a, b, errorMag);
+        recordCalculation(a + b / errorMag);
         return errorMag;
     }
 } 
 console.log(add, subtract, multiply, divide);
+console.log(history)
