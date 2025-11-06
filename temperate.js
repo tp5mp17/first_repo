@@ -1,4 +1,4 @@
-//temperate
+//temperature
 
 const day1Tempf = 32
 const day2TempC = 25
