@@ -1,11 +1,11 @@
-function createLoginTracker(userinfo) {
-    
-    let attemptCount = 0;
-
-    const userinfo = {
+ const userinfo = {
         "username": "user1",
         "password": "password123"
     }
+
+function createLoginTracker(userinfo) {
+    
+    let attemptCount = 0;
 
     const checkPassword = (attemptPassword) => {
         attemptCount = attemptCount + 1;
@@ -21,5 +21,6 @@ function createLoginTracker(userinfo) {
     }    
     return (attempt) => checkPassword(attempt)
 }
-
-  console.log(userinfo);
+ module.exports = {
+    ...createLoginTracker(typeof createLoginTracker !== 'undefined' && {createLoginTracker})
+ };
