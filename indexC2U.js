@@ -1,13 +1,15 @@
 function combinUesrs(...args) {
-    const combinObject = {
+    const combinedObject = {
     uesrs: []
     };
     for (const userArray of args) {
-        combinObject.users = [...combinObject.uesrs, ...userArray];
+        combinedObject.users = [...combinedObject.uesrs, ...userArray];
+        
+        combinedObject.merge_date = Data.today().format('11/12/2025')
 
     }
 
-    return combinObject;
+    return combinedObject;
 }
  const A = [{ id: 1, name: 'Alice' }];
  const B = [{ id: 2, name: 'bill'}]
